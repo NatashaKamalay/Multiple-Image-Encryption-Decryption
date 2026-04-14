@@ -299,7 +299,7 @@ def inverse(key, Encode, cipher_image):
 def decrypt():
     uploaded_file = st.file_uploader("Choose encrypted image file", type=["jpg", "jpeg", "png"])
     file_name = st.text_input("Enter key : ")
-    folder_path=r"C:\Users\NATHASHA K\OneDrive\Desktop\Image Encryption and Decryption\keystore"
+    folder_path=r"C:\Users\NATHASHA K\Desktop\Image Encryption and Decryption\keystore"
     decrypt=st.button("Decrypt the image", key="submit")
     if decrypt and (uploaded_file is not None):
         

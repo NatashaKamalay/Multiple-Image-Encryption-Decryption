@@ -355,7 +355,7 @@ def encrypting(image,file_path):
     return Encrypted_image
           
 def encrypt(file_path):
-    image_path = r"C:\Users\NATHASHA K\OneDrive\Desktop\Image Encryption and Decryption\result_image.png"
+    image_path = r"C:\Users\NATHASHA K\Desktop\Image Encryption and Decryption\result_image.png"
     color_image  = cv2.imread(image_path)
     encrypted_channels = []
     for i in range(3):
@@ -363,6 +363,6 @@ def encrypt(file_path):
         encrypted_channels.append(encrypted_channel)
 
     Encrypted_image = cv2.merge(encrypted_channels)    
-    save_path = r"C:\Users\NATHASHA K\OneDrive\Desktop\Image Encryption and Decryption\encrypted_image.png"
+    save_path = r"C:\Users\NATHASHA K\Desktop\Image Encryption and Decryption\encrypted_image.png"
     cv2.imwrite(save_path, Encrypted_image)
     st.image(Encrypted_image, caption='Encrypted Image', use_column_width=True)

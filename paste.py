@@ -55,7 +55,7 @@ def Multiple_Image():
     uploaded_files = st.file_uploader("Choose multiple image files", type=["jpg", "jpeg", "png"], accept_multiple_files=True, key="file_uploader")
 
     file_name=st.text_input("Input Key : ")
-    folder_path=r"C:\Users\NATHASHA K\OneDrive\Desktop\Image Encryption and Decryption\keystore"
+    folder_path=r"C:\Users\NATHASHA K\Desktop\Image Encryption and Decryption\keystore"
 
     # Create a button to trigger the image composition
     button_clicked = st.button("Encrypt the images", key="compose_button")
@@ -67,5 +67,5 @@ def Multiple_Image():
         result_image = fill_image_with_images((512, 512), uploaded_files)
         st.image(result_image, caption='Uploaded Image', use_column_width=True)
         # Save the result_image
-        result_image.save(r"C:\Users\NATHASHA K\OneDrive\Desktop\Image Encryption and Decryption\result_image.png") 
+        result_image.save(r"C:\Users\NATHASHA K\Desktop\Image Encryption and Decryption\result_image.png")
         encrypt(file_path)
